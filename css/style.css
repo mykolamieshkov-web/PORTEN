@@ -12,6 +12,10 @@ body,html {
    position: relative;
 
 }
+.header {
+   display: flex;
+   justify-content: space-around;
+}
 .main {
    
    padding-bottom: 90px;
@@ -46,6 +50,7 @@ body,html {
 .header_links_list {
    justify-content: right;
    margin-top: 35px;
+   margin-left: 210px;
 }
 .header_links_list a {
    text-decoration: none;
@@ -76,6 +81,7 @@ color: #969696;
 @media (max-width: 31.25rem) {
    .header_links_list {
       margin-top: 20px;
+      margin-left: 20px;
    }
    .header_links_list a {
       font-size: 7px;
