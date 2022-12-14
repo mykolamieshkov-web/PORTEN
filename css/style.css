@@ -17,8 +17,9 @@ body,html {
    justify-content: space-around;
 }
 .main {
+  flex: 1 1 auto; 
+   padding-bottom: 10px;
    
-   padding-bottom: 90px;
 }
 .foother {
    bottom: 0;
@@ -28,7 +29,7 @@ body,html {
    width: 100%;
    background: green;
 }
-  */
+  
 .header {
    max-width: 1920px;
    height: 80px;
@@ -50,7 +51,7 @@ body,html {
 .header_links_list {
    justify-content: right;
    margin-top: 35px;
-   margin-left: 210px;
+   margin-left: 580px;
 }
 .header_links_list a {
    text-decoration: none;
@@ -70,7 +71,8 @@ color: #969696;
 }
 .header_icons {
    justify-content: flex-end;
-   margin-top:40px;  
+   margin-top:40px;
+   margin-left: 20px;  
 }
 .header_icons img {
    max-width: 100%;
@@ -94,5 +96,92 @@ color: #969696;
 }
 .header_icons {
    margin-top: 20px;
+   margin-left: 0;
 }
 }
+.banner {
+ width: 100%;
+ height: 800px;
+  background: url('/img/Content_bg.PNG'); 
+  background-position: center;
+  background-size: auto;
+}
+.banner_content {
+   width: 320px;
+   height: 320px;
+   border: 4px solid #FFFFFF;
+   padding-top: 20px;
+   margin: 0 auto;
+}
+.banner_content img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+}
+.banner:last-child {
+   padding-bottom: 0;
+}
+.banner_subtitle {
+}
+.banner h1 {
+   font-family: 'Post No Bills Jaffna SemiBold', sans-serif;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 64px;
+   line-height: 96px;
+   text-align: center;
+
+   color: #FFFFFF;  
+
+}
+.banner p {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 28px;
+   text-align: center;
+   text-transform: uppercase;
+   font-family: "PT Sans";
+   color: #FFFFFF;
+}
+.banner_subtitle p {
+font-family: "PT Sans";
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+/* banner stylesheet for mobile */
+@media (max-width: 31.25rem) {
+   .banner {
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 300px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+   }
+
+.banner_content { 
+   width: 150px;
+   height: 150px;
+   border: 1px solid #FFFFFF;
+}
+   .banner_subtitle {
+
+   }
+   .banner h1 {
+      font-size: 16px;
+   }
+   .banner p {
+      font-size: 14px;
+   }
+   .banner_subtitle p {
+      font-size: 10px;
+
+   }}
