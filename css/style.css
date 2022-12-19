@@ -5,7 +5,7 @@
 body,html {
    padding: 15px;
    background: #000000;
-   height: 100%;
+   min-height: 100%;
 }
 .wrapper{
    min-height: 100%;
@@ -113,7 +113,7 @@ color: #969696;
    padding-top: 20px;
    margin: 0 auto;
 }
-.banner_content img {
+#line {
    display: block;
    margin-left: auto;
    margin-right: auto;
@@ -172,9 +172,6 @@ color: #FFFFFF;
    height: 150px;
    border: 1px solid #FFFFFF;
 }
-   .banner_subtitle {
-
-   }
    .banner h1 {
       font-size: 16px;
    }
@@ -185,3 +182,259 @@ color: #FFFFFF;
       font-size: 10px;
 
    }}
+   /* PC laptop*/
+   .content_conteiner_content {
+      display: flex;
+
+   }
+   
+   .content_left h1 {
+      font-family: "PT Sans";
+      font-size: 36px;
+      line-height: 42px;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 15px;
+      
+      /* white */
+      color: #FFFFFF;}
+   /* mobile */
+   @media (max-width: 31.25rem) {
+      .content_conteiner_content {
+         display: block;
+      }
+.content_left h1 {
+   font-size: 12px;
+}
+}
+  
+   .content_right {
+      background: #000000;
+      width: 1040px;
+      height: 600px;
+   }
+   .content_left {
+      width: 880px;
+      height: 600px;
+   }
+   @media (max-width: 31.25rem) { 
+      .content_left,.content_right {
+         width: 100%;
+         background-size:cover;
+         height: 420px;
+      }}
+      /* PC laptop */
+      .content_left_content {
+         display: flex;
+         justify-content: space-around;
+         gap:3px;
+         margin: 30px;
+      }
+      .left_block {
+         display: block;
+      }
+      .left_block h1 {
+         font-size: 18px;
+line-height: 21px;
+font-family: "PT Sans";     
+/* white */
+color: #FFFFFF;
+      }
+      .left_block p {
+         font-family: "PT Sans";
+         font-size: 16px;
+line-height: 19px;
+
+/* light-gray */
+color: #D0D0D0;
+      }
+      .left_block img {
+         max-width: 100%;
+      }
+      .content_left_content:last-child {
+         padding-bottom: 0;
+      }
+      /* mobile layout */
+
+   @media (max-width: 31.25rem) { 
+      .content_left_content {
+         display: flex;
+         justify-content: space-around;
+         gap:3px;
+         margin: 30px;
+      }
+      .left_block {
+         display: block;
+      }
+      .left_block h1 {
+         font-size: 14px;
+line-height: 21px;
+font-family: "PT Sans";     
+/* white */
+color: #FFFFFF;
+      }
+      .left_block p {
+         font-family: "PT Sans";
+         font-size: 12px;
+line-height: 19px;
+
+/* light-gray */
+color: #D0D0D0;
+      }
+     .left_block img {
+      width: 50%;
+      height: 50%;
+     }
+   }
+   /* PC laptop */
+   .content_right_content {
+      margin-top: 350px;
+      justify-content: center;
+      justify-items: center;
+      text-align: center;
+   }
+   .content_right_content h1 {
+   font-size: 36px;
+   font-family: "PT Sans";
+line-height: 42px;
+text-align: center;
+text-transform: uppercase;
+/* white */
+color: #FFFFFF;
+   }
+   #link_btn {
+font-style: normal;
+font-family: "PT Sans";
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+padding: 5px 25px 5px 25px;
+text-decoration: none;
+border: 2px solid #FFFFFF;
+margin-top: 50px;
+/* white */
+color: #FFFFFF;
+display: block;
+margin-left: auto;
+margin-right: auto;
+      max-width: 311px;
+   }
+   /* mobile layout */
+   @media (max-width: 31.25rem) { 
+      .content_right_content h1 {
+font-size: 16px;
+      }
+      #link_btn {
+         font-size: 12px;
+      }
+      .content_right_content {
+         margin-top: 200px;
+      }
+   }
+   .content_left p {
+      font-family: "PT Sans";
+      font-size: 22px;
+      margin: 36px;
+line-height: 19px;
+color: #FFFFFF;
+   }
+
+   @media (max-width: 31.25rem) { 
+     .content_left p {
+      font-size: 18px;
+      margin: 15px;
+     }} 
+
+     /* pc laptop */
+     .block_flex {
+      width: 1920px;
+      height: 450px;
+      
+     }
+     .block_flex_title h1 {
+      font-size: 36px;
+      font-family: "PT Sans";
+   line-height: 42px;
+   text-align: center;
+   text-transform: uppercase;
+   /* white */
+   color: #FFFFFF;
+     }
+     .content h1 {
+font-family: "PT Sans";
+font-size: 18px;
+line-height: 21px;
+
+/* white */
+color: #FFFFFF;
+
+     }
+     .content p {
+      font-family: "PT Sans";
+font-size: 12px;
+line-height: 21px;
+color: #FFFFFF;
+     }
+     .content img {
+      max-width: 100%;
+     }
+     .block_flex_title {
+      display: block;
+margin-left: auto;
+margin-right: auto;
+     }
+     /* mobile layout */
+     @media (max-width: 31.25rem) { 
+     .block_flex {
+      width: 100%;
+      height: fit-content;
+     }
+     .block_flex_title h1 {
+      font-size: 14px;
+
+     }
+     content h1 {
+      font-size: 12px;
+
+     }
+     .content p {
+      font-size: 10px;
+
+     }
+     .content img {
+      width: 50px;
+      height: 50px;
+     
+   }
+     }
+     .block-flex_content {
+      display: flex;
+      justify-content: center;
+      
+     }
+     .brands_title h1 { 
+         font-family: "PT Sans";
+         font-size: 36px;
+         line-height: 42px;
+         text-align: center;
+         text-transform: uppercase;
+         margin: 15px;
+         color: #FFFFFF;
+     }
+     .brands_content {
+      display: flex;
+      justify-content: space-around;
+      gap: 1px;
+     }
+     .brands_content img {
+      max-width: 100%;
+     }
+     @media (max-width: 31.25rem) {
+      .brands_content img {
+         width: 25%;
+         height: 25%;
+      }}
+   
